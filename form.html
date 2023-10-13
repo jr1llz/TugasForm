@@ -12,24 +12,19 @@
     </style>
   </head>
   <body>
+    <form action="welcome.html" method="post">
     <h1>Buat Akun Baru</h1>
     <h4>Sign Up Form</h4>
 
     <label for="fname">First name:</label><br />
-    <input type="text" id="fname" name="fname" required /><br /><br />
+    <input type="text" id="fname" name="fname" required><br /><br />
     <label for="lname">Last name:</label><br />
-    <input type="text" id="lname" name="lname" required /><br /><br />
+    <input type="text" id="lname" name="lname" required><br /><br />
 
     <label for="gender">Gender</label><br />
-    <input type="radio" id="malebut" name="malebut" value="malebut" required />
+    <input type="radio" id="malebut" name="kelamin" value="malebut" required>
     <label for="male">Male</label><br />
-    <input
-      type="radio"
-      id="femalebut"
-      name="femalebut"
-      value="femalebut"
-      required
-    />
+    <input type="radio" id="femalebut" name="kelamin" value="femalebut"/>
     <label for="male">Female</label><br /><br />
     <label for="Nationality">Nationality</label><br />
     <select id="country" name="country">
@@ -39,16 +34,16 @@
       <option value="kosambi">Kosambi</option></select
     ><br /><br />
     <label for="langspok">Languange Spoken</label><br />
-    <input type="radio" id="indo" name="indo" value="indo" />
+    <input type="checkbox" id="indo" name="indo" value="indo" />
     <label for="Indo">Indonesia</label><br />
-    <input type="radio" id="sunda" name="sunda" value="sunda" />
+    <input type="checkbox" id="sunda" name="sunda" value="sunda" />
     <label for="Sunda">Sunda</label><br />
-    <input type="radio" id="jawa" name="jawa" value="jawa" />
+    <input type="checkbox" id="jawa" name="jawa" value="jawa" />
     <label for="male">Jawa</label><br /><br /><br />
-    <textarea name="bio" rows="10" cols="20"></textarea>
-    <br />
-    <a href="welcome.html" target="">
+    <textarea name="bio" rows="10" cols="20" required ></textarea>
+    <br>
       <button>Sign Up</button>
     </a>
+  </form>
   </body>
 </html>
