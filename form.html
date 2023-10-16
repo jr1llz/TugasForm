@@ -7,43 +7,91 @@
 
     <style>
       body {
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: Poppins, sans-serif;
+      }
+
+      h1 {
+        color: #0074b7;
+        text-align: center;
+      }
+
+      h4 {
+        color: #333;
+        text-align: center;
+      }
+
+      label {
+        display: block;
+        font-weight: bold;
+        color: #555;
+      }
+
+      input[type="text"],
+      select,
+      textarea {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+
+      button {
+        background-color: #0074b7;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 7px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #000000;
       }
     </style>
   </head>
   <body>
     <form action="welcome.html" method="post">
-    <h1>Buat Akun Baru</h1>
-    <h4>Sign Up Form</h4>
+      <h1>Buat Akun Baru</h1>
+      <h4>Sign Up Form</h4>
 
-    <label for="fname">First name:</label><br />
-    <input type="text" id="fname" name="fname" required><br /><br />
-    <label for="lname">Last name:</label><br />
-    <input type="text" id="lname" name="lname" required><br /><br />
+      <label for="fname">First name:</label><br />
+      <input type="text" id="fname" name="fname" required /><br /><br />
+      <label for="lname">Last name:</label><br />
+      <input type="text" id="lname" name="lname" required /><br /><br />
 
-    <label for="gender">Gender</label><br />
-    <input type="radio" id="malebut" name="kelamin" value="malebut" required>
-    <label for="male">Male</label><br />
-    <input type="radio" id="femalebut" name="kelamin" value="femalebut"/>
-    <label for="male">Female</label><br /><br />
-    <label for="Nationality">Nationality</label><br />
-    <select id="country" name="country">
-      <option value="indonesia">Indonesia</option>
-      <option value="klari">Klari</option>
-      <option value="ckm">CKM</option>
-      <option value="kosambi">Kosambi</option></select
-    ><br /><br />
-    <label for="langspok">Languange Spoken</label><br />
-    <input type="checkbox" id="indo" name="indo" value="indo" />
-    <label for="Indo">Indonesia</label><br />
-    <input type="checkbox" id="sunda" name="sunda" value="sunda" />
-    <label for="Sunda">Sunda</label><br />
-    <input type="checkbox" id="jawa" name="jawa" value="jawa" />
-    <label for="male">Jawa</label><br /><br /><br />
-    <textarea name="bio" rows="10" cols="20" required ></textarea>
-    <br>
+      <label for="gender">Gender</label><br />
+      <input
+        type="radio"
+        id="malebut"
+        name="kelamin"
+        value="malebut"
+        required
+      />
+      <label for="male">Male</label><br />
+      <input type="radio" id="femalebut" name="kelamin" value="femalebut" />
+      <label for="male">Female</label><br /><br />
+
+      <label for="Nationality">Nationality</label><br />
+      <select id="country" name="country">
+        <option value="indonesia">Indonesia</option>
+        <option value="klari">Klari</option>
+        <option value="ckm">CKM</option>
+        <option value="kosambi">Kosambi</option></select
+      ><br /><br />
+
+      <label for="langspok">Language Spoken</label><br />
+      <input type="checkbox" id="indo" name="indo" value="indo" />
+      <label for="Indo">Indonesia</label><br />
+      <input type="checkbox" id="sunda" name="sunda" value="sunda" />
+      <label for="Sunda">Sunda</label><br />
+      <input type="checkbox" id="jawa" name="jawa" value="jawa" />
+      <label for="male">Jawa</label><br /><br /><br />
+
+      <textarea name="bio" rows="10" cols="20" required></textarea>
+      <br />
       <button>Sign Up</button>
-    </a>
-  </form>
+    </form>
   </body>
 </html>
