@@ -27,7 +27,7 @@
       <li style="color: #000000">Mengunjungi Website ini</li>
       <li>
         Mendaftarkan di
-        <a href="form.html" style="text-decoration: none; color: #0074b7"
+        <a href="form.php" style="text-decoration: none; color: #0074b7"
           >Form Sign Up</a
         >
       </li>

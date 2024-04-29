@@ -52,7 +52,7 @@
     </style>
   </head>
   <body>
-    <form action="welcome.html" method="get">
+    <form action="welcome.php" method="get">
       <h1>Buat Akun Baru</h1>
       <h4>Sign Up Form</h4>
 
@@ -64,30 +64,29 @@
       <label for="gender">Gender</label><br />
       <input
         type="radio"
-        id="malebut"
-        name="kelamin"
-        value="malebut"
-        required
+        id="male"
+        name="gender"
+        value="Male"
       />
       <label for="male">Male</label><br />
-      <input type="radio" id="femalebut" name="kelamin" value="femalebut" />
-      <label for="male">Female</label><br /><br />
+      <input type="radio" id="female" name="gender" value="Female" />
+      <label for="female">Female</label><br /><br />
 
       <label for="Nationality">Nationality</label><br />
       <select id="country" name="country">
-        <option value="indonesia">Indonesia</option>
-        <option value="klari">Klari</option>
-        <option value="ckm">CKM</option>
-        <option value="kosambi">Kosambi</option></select
+        <option value="Indonesia">Indonesian</option>
+        <option value="Klari">Klari</option>
+        <option value="CKM">CKM</option>
+        <option value="Kosambi">Kosambi</option></select
       ><br /><br />
 
-      <label for="langspok">Language Spoken</label><br />
-      <input type="checkbox" id="indo" name="indo" value="indo" />
-      <label for="Indo">Indonesia</label><br />
-      <input type="checkbox" id="sunda" name="sunda" value="sunda" />
-      <label for="Sunda">Sunda</label><br />
-      <input type="checkbox" id="jawa" name="jawa" value="jawa" />
-      <label for="male">Jawa</label><br /><br /><br />
+      <label for="bahasa">Language Spoken</label><br />
+      <input type="checkbox" id="indo" name="language[]" value="Indonesian" />
+      <label for="Indo">Indonesian</label><br />
+      <input type="checkbox" id="sunda" name="language[]" value="Sundanese" />
+      <label for="Sunda">Sundanese</label><br />
+      <input type="checkbox" id="jawa" name="language[]" value="Javanese" />
+      <label for="Jawa">Javanese</label><br /><br /><br />
 
       <textarea name="bio" rows="10" cols="20" required></textarea>
       <br />
